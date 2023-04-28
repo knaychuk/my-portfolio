@@ -1,4 +1,5 @@
 ---
+import '@fontsource/poppins';
 ---
 
 <html lang="en">
@@ -9,7 +10,29 @@
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro</title>
 	</head>
-	<body>
-		<h1>Astro</h1>
+	<body class="font-poppins">
+		<section class="text-slate-300 bg-neutral-800 h-screen flex justify-center items-center text-center ">
+			<div class="">
+				<h1 class="text-4xl ">Hi, I'm <span class="text-cyan-600">Kate.</span></h1>
+				<h2 class="text-2xl">Student, Programmer, Musician</h2>
+				<button class="mt-3 p-1 outline outline-3 outline-cyan-600 text-cyan-600">View More</button>
+			</div>
+		</section>
+		<section class="text-slate-200 bg-cyan-800 flex flex-col items-center text-center">
+			<div>
+				<h2 class="text-3xl text-center mt-10 mb-5">About</h2>
+				<p class="text-1xl mb-5">A student at the University of British Columbia who loves to learn new skills and create cool stuff! </p>
+			</div>
+			<div>
+				<h2 class="text-3xl mb-5">Tools</h2>
+			</div>
+		</section>
+		<section class="text-slate-200 bg-neutral-800 h-screen flex flex-col items-center text-center">
+			<h2 class="text-3xl mt-10">Projects</h2>
+	
+			<div>
+
+			</div>
+		</section>
 	</body>
 </html>
