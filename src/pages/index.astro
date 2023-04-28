@@ -1,6 +1,10 @@
 ---
 import '@fontsource/poppins';
+import test_image from "../assets/spiritfarer_background.png";
+
+
 ---
+
 
 <html lang="en">
 	<head>
@@ -8,31 +12,69 @@ import '@fontsource/poppins';
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 		<title>Astro</title>
+
+		
 	</head>
 	<body class="font-poppins">
 		<section class="text-slate-300 bg-neutral-800 h-screen flex justify-center items-center text-center ">
 			<div class="">
 				<h1 class="text-4xl ">Hi, I'm <span class="text-cyan-600">Kate.</span></h1>
 				<h2 class="text-2xl">Student, Programmer, Musician</h2>
-				<button class="mt-3 p-1 outline outline-3 outline-cyan-600 text-cyan-600">View More</button>
+				<button onclick="document.getElementById('aboutHeader').scrollIntoView({ behavior: 'smooth'})" class="text-base m-2 outline outline-2 p-1 transition ease-in-out delay-150 outline-cyan-800 text-cyan-600 hover:bg-cyan-800 hover:text-slate-300 duration-300">View More</button>
 			</div>
 		</section>
 		<section class="text-slate-200 bg-cyan-800 flex flex-col items-center text-center">
 			<div>
-				<h2 class="text-3xl text-center mt-10 mb-5">About</h2>
+				<h2 id="aboutHeader" class="text-3xl text-center mt-10 mb-5">About</h2>
 				<p class="text-1xl mb-5">A student at the University of British Columbia who loves to learn new skills and create cool stuff! </p>
 			</div>
 			<div>
 				<h2 class="text-3xl mb-5">Tools</h2>
-			</div>
-		</section>
-		<section class="text-slate-200 bg-neutral-800 h-screen flex flex-col items-center text-center">
-			<h2 class="text-3xl mt-10">Projects</h2>
 	
-			<div>
-
 			</div>
 		</section>
+		<section class=" bg-neutral-800  flex flex-col items-center text-center">
+			<h2 class="text-cyan-600 text-3xl mt-10 mb-10">Projects</h2>
+			
+			<!-- //first project -->
+			<div class=" text-slate-300 shadow-custom flex flex-col items-center mb-10 px-10 py-5">
+				<h3 class="text-2xl mb-5 text-slate-200">Project 1</h3>
+				<img class="mb-5" src={test_image} alt="" width="400px">
+				<div>
+					<p class="max-w-[400px] mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<div class="flex justify-center mb-5">
+						<i class="devicon-react-original colored text-4xl mx-2"></i>	
+            <i class="devicon-typescript-plain colored text-4xl mx-2"></i>
+            <i class="devicon-tailwindcss-plain colored text-4xl mx-2"></i>  
+					</div>
+					<div class="">
+						<a href="https://github.com/knaychuk/shop-web-app" target="_blank"><button class="text-base m-2 outline outline-2 p-1 transition ease-in-out delay-150 outline-cyan-800 text-cyan-600 hover:bg-cyan-800 hover:text-slate-300 duration-300">Live Demo</button></a>
+						<a href="https://github.com/knaychuk/shop-web-app" target="_blank"><button class="text-base m-2 outline outline-2 p-1 transition ease-in-out delay-150 outline-cyan-800 text-cyan-600 hover:bg-cyan-800 hover:text-slate-300 duration-300">GitHub</button></a>
+					</div>
+				</div>
+			</div>
+
+			<!-- //second project -->
+			<div class=" text-slate-300 shadow-custom flex flex-col items-center mb-10 px-10 py-5">
+				<h3 class="text-2xl mb-5 text-slate-200">Project 1</h3>
+				<img class="mb-5" src={test_image} alt="" width="400px">
+				<div>
+					<p class="max-w-[400px] mb-5">Simple shop app with authentication, database storage, and a sample payment system</p>
+					<div class="flex justify-center mb-5">
+						<i class="devicon-react-original colored text-4xl mx-2"></i>	
+            <i class="devicon-typescript-plain colored text-4xl mx-2"></i>
+            <i class="devicon-tailwindcss-plain colored text-4xl mx-2"></i>  
+					</div>
+					<div class="">
+						<a href="https://github.com/knaychuk/shop-web-app" target="_blank"><button class="text-base m-2 outline outline-2 p-1 transition ease-in-out delay-150 outline-cyan-800 text-cyan-600 hover:bg-cyan-800 hover:text-slate-300 duration-300">Live Demo</button></a>
+						<a href="https://github.com/knaychuk/shop-web-app" target="_blank"><button class="text-base m-2 outline outline-2 p-1 transition ease-in-out delay-150 outline-cyan-800 text-cyan-600 hover:bg-cyan-800 hover:text-slate-300 duration-300">GitHub</button></a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
 	</body>
 </html>

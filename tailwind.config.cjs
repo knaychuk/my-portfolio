@@ -5,7 +5,10 @@ module.exports = {
 		extend: {
 			fontFamily: {
 				poppins: ["Poppins", "sans-serif"]
-			}
+			},
+			boxShadow: {
+				"custom": "0 12px 20px rgba(0,0,0,.35)"
+			},
 		},
 	},
 	plugins: [],
