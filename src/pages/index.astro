@@ -13,32 +13,39 @@ import test_image from "../assets/spiritfarer_background.png";
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+		<link rel="stylesheet" 
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 		<title>Astro</title>
 
 		
 	</head>
-	<body class="font-poppins">
+	<body class="font-poppins relative">
 
 		<!-- intro page -->
+		<div class="mx-auto">
+			<i class="fa fa-camera-retro absolute mx-auto"></i>
+		</div>
 		<section class="text-slate-300 bg-neutral-800 h-screen flex justify-center items-center text-center ">
+			
 			<div>
-				<h1 class="text-4xl m-2 lg:text-6xl">Hi, I'm <span class="text-cyan-600">Kate.</span></h1>
+				<h1 class="text-4xl m-2 lg:text-6xl">Hi, I'm <span class="text-cyan-700">Kate.</span></h1>
 				<h2 class="text-2xl m-2 lg:text-3xl">Student, Developer, Musician</h2>
-				<button onclick="document.getElementById('aboutHeader').scrollIntoView({ behavior: 'smooth'})" class="text-lg m-2 outline outline-2 p-1 transition ease-in-out delay-50 outline-cyan-800 text-cyan-600 hover:bg-cyan-800 hover:text-slate-300 duration-300 lg:text-2xl">View More</button>
+				<button onclick="document.getElementById('about-section').scrollIntoView({ behavior: 'smooth'})" class="text-lg m-2 outline outline-2 p-1 transition ease-in-out delay-50 outline-cyan-800 text-cyan-700 hover:bg-cyan-800 hover:text-slate-300 duration-300 lg:text-2xl">View More</button>
 			</div>
 		</section>
 
-		<nav id="aboutHeader" class="bg-[#124a5b] shadow-navbar">
-			<ol class="text-xl p-5 flex justify-evenly">
-				<li>Top</li>
-				<li>About</li>
-				<li>Tools</li>
-				<li>Projects</li>
+		<!-- navbar -->
+		<!-- <nav class="bg-[#114051] shadow-navbar sticky top-0">
+			<ol class="text-lg p-5 flex justify-center md:text-xl lg:text-2xl">
+				<li class="transition ease-in-out delay-50 text-white mx-5 hover:translate-y-1 hover:scale-110 hover: duration-300 hover:cursor-pointer"><a href="#top-section">Top</a></li>
+				<li class="transition ease-in-out delay-50 text-white mx-5 hover:translate-y-1 hover:scale-110 hover: duration-300 hover:cursor-pointer"><a href="#about-section">About</a></li>
+				<li class="transition ease-in-out delay-50 text-white mx-5 hover:translate-y-1 hover:scale-110 hover: duration-300 hover:cursor-pointer"><a href="#tools-section">Tools</a></li>
+				<li class="transition ease-in-out delay-50 text-white mx-5 hover:translate-y-1 hover:scale-110 hover: duration-300 hover:cursor-pointer"><a href="#projects-section">Projects</a></li>
 			</ol>
-		</nav>
+		</nav> -->
 
 		<!-- info  -->
-		<section class="text-slate-200 bg-cyan-800 flex flex-col items-center ">
+		<section id="about-section" class="text-slate-200 bg-cyan-900 flex flex-col items-center ">
 			
 			<!-- about section -->
 			<div>
@@ -54,11 +61,19 @@ import test_image from "../assets/spiritfarer_background.png";
 			<div>
 				<h2 class="text-3xl mb-5 lg:text-4xl">Tools</h2>
 			</div>
+			<div class="mb-10">
+	
+				<i class="devicon-html5-plain colored text-4xl mx-2"></i>
+				<i class="devicon-css3-plain colored text-4xl mx-2"></i>
+				<i class="devicon-java-plain colored text-4xl mx-2"></i>
+        <i class="devicon-javascript-plain colored text-4xl mx-2"></i>
+        <i class="devicon-tailwindcss-plain colored text-4xl mx-2"></i> 
+			</div>
 		</section>
 
 		<!-- project section -->
 		<section class=" bg-neutral-800  flex flex-col items-center text-center">
-			<h2 class="text-cyan-600 text-3xl mt-10 mb-10 lg:text-4xl">Projects</h2>
+			<h2 class="text-cyan-700 text-3xl mt-10 mb-10 lg:text-4xl">Projects</h2>
 			
 			<!-- //first project -->
 			<div class=" text-slate-300 shadow-project-cards flex flex-col items-center mb-10 px-10 py-5 lg:flex-row mx-10">
@@ -74,7 +89,7 @@ import test_image from "../assets/spiritfarer_background.png";
             <i class="devicon-tailwindcss-plain colored text-5xl mx-2"></i>  
 					</div>
 					<div class="lg:mt-10">
-						<a href="https://github.com/knaychuk/shop-web-app" target="_blank"><button class="text-xl m-2 outline outline-2 p-1 transition ease-in-out delay-50 outline-cyan-800 text-cyan-600 hover:bg-cyan-800 hover:text-slate-300 duration-300">Live Demo</button></a>
+						<a href="#top-section" target="_blank"><button class="text-xl m-2 outline outline-2 p-1 transition ease-in-out delay-50 outline-cyan-800 text-cyan-600 hover:bg-cyan-800 hover:text-slate-300 duration-300">Live Demo</button></a>
 						<a href="https://github.com/knaychuk/shop-web-app" target="_blank"><button class="text-xl m-2 outline outline-2 p-1 transition ease-in-out delay-50 outline-cyan-800 text-cyan-600 hover:bg-cyan-800 hover:text-slate-300 duration-300">GitHub</button></a>
 					</div>
 				</div>
@@ -101,6 +116,6 @@ import test_image from "../assets/spiritfarer_background.png";
 			</div>
 		</section>
 
-
+	
 	</body>
 </html>
