@@ -28,12 +28,20 @@ import test_image from "../assets/spiritfarer_background.png";
 			</div>
 		</section>
 
+		<nav id="aboutHeader" class="bg-[#124a5b] shadow-navbar">
+			<ol class="text-xl p-5 flex justify-evenly">
+				<li>Top</li>
+				<li>About</li>
+				<li>Tools</li>
+				<li>Projects</li>
+			</ol>
+		</nav>
 
 		<!-- info  -->
 		<section class="text-slate-200 bg-cyan-800 flex flex-col items-center ">
 			
 			<!-- about section -->
-			<div id="aboutHeader">
+			<div>
 				<h2 class="text-3xl text-center mt-10 mb-5 lg:text-4xl">About</h2>
 				<p class="text-base mb-5 mx-10 max-w-[800px] min-w-[300px] lg:text-xl">As a cs student at the University of British Columbia, I am given the opportunity to learn and experiment with really cool technologies that allow me to create projects originating from my ideas. 
 				<br>
@@ -53,7 +61,7 @@ import test_image from "../assets/spiritfarer_background.png";
 			<h2 class="text-cyan-600 text-3xl mt-10 mb-10 lg:text-4xl">Projects</h2>
 			
 			<!-- //first project -->
-			<div class=" text-slate-300 shadow-custom flex flex-col items-center mb-10 px-10 py-5 lg:flex-row mx-10">
+			<div class=" text-slate-300 shadow-project-cards flex flex-col items-center mb-10 px-10 py-5 lg:flex-row mx-10">
 				<div>
 					<h3 class=" text-2xl mb-5 text-slate-200 ">Shop Web App</h3>
 					<img class="mb-5" src={test_image} alt="" width="600px">
@@ -73,7 +81,7 @@ import test_image from "../assets/spiritfarer_background.png";
 			</div>
 
 			<!-- //second project -->
-			<div class=" text-slate-300 shadow-custom flex flex-col items-center mb-10 px-10 py-5 lg:flex-row mx-10">
+			<div class=" text-slate-300 shadow-project-cards flex flex-col items-center mb-10 px-10 py-5 lg:flex-row mx-10">
 				<div class="lg:order-last">
 					<h3 class=" text-2xl mb-5 text-slate-200 ">Expire</h3>
 					<img class="mb-5" src={test_image} alt="" width="600px">
