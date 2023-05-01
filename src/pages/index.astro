@@ -1,6 +1,7 @@
 ---
 import '@fontsource/poppins';
 import test_image from "../assets/spiritfarer_background.png";
+import favicon from '../../public/favicon.ico';
 
 
 ---
@@ -9,11 +10,11 @@ import test_image from "../assets/spiritfarer_background.png";
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href={favicon} />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-		<title>Astro</title>
+		<title>Kate's Portfolio</title>
 
 		
 	</head>
@@ -41,8 +42,7 @@ import test_image from "../assets/spiritfarer_background.png";
 
 		<!-- info  -->
 		<section id="about-section" class="text-slate-200 bg-cyan-900 flex flex-col items-center ">
-			
-			<!-- about section -->
+						<!-- about section -->
 			<div>
 				<h2 class="text-3xl text-center mt-10 mb-5 lg:text-4xl">About</h2>
 				<p class="text-base mb-5 mx-10 max-w-[800px] min-w-[300px] lg:text-xl">As a cs student at the University of British Columbia, I am given the opportunity to learn and experiment with really cool technologies that allow me to create projects originating from my ideas. 
